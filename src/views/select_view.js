@@ -2,7 +2,7 @@ const PubSub = require('../helpers/pub_sub.js');
 
 const SelectView = function(container) {
   this.container = container;
-  // console.log(container);
+
 }
 
 SelectView.prototype.bindEvents = function () {

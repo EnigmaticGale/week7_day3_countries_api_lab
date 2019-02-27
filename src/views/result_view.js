@@ -21,7 +21,6 @@ ResultView.prototype.bindEvents = function(){
     this.divInfo.appendChild(regionHeader);
     this.divInfo.appendChild(region);
     this.getLanguages(info.languages);
-    console.log(info.languages);
   });
 };
 ResultView.prototype.getLanguages = function(languages){

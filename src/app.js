@@ -4,14 +4,12 @@ const ResultView = require('./views/result_view.js');
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('JavaScript Loaded');
 
   const countries = new Countries;
   countries.getData();
   countries.bindEvents();
 
   const container = document.querySelector('select#countries')
-  console.log(container);
   const selectView = new SelectView(container);
   selectView.bindEvents();
 
