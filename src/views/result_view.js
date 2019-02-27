@@ -20,6 +20,15 @@ ResultView.prototype.bindEvents = function(){
     this.divInfo.appendChild(flag);
     this.divInfo.appendChild(regionHeader);
     this.divInfo.appendChild(region);
+    this.getLanguages(info.languages);
+    console.log(info.languages);
+  });
+};
+ResultView.prototype.getLanguages = function(languages){
+  languages.forEach((language) =>{
+    const listElement = document.createElement('li');
+    listElement.textContent = language.name;
+    this.divInfo.appendChild(listElement);
   });
 };
 module.exports = ResultView;
